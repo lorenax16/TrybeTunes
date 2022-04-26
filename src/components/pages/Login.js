@@ -27,7 +27,6 @@ class Login extends React.Component {
   }
 
   clickEvent = () => {
-    console.log('teste');
     const { nameInput } = this.state;
     this.setState({
       carregando: true,
