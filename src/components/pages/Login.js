@@ -33,7 +33,8 @@ class Login extends React.Component {
       carregando: true,
     }, async () => {
       await createUser({ name: nameInput });
-      this.setState({ carregando: false,
+      this.setState({
+        carregando: false,
         isButtonDisbled: true,
         nameInput: '',
         repag: '/search',
