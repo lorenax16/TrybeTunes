@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { addSong } from '../services/favoriteSongsAPI';
 import Carregando from './Loading';
 
-export class MusicCard extends Component {
+class MusicCard extends Component {
   constructor() {
     super();
     this.state = {
