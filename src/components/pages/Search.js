@@ -35,7 +35,7 @@ export class Search extends Component {
       loading: true,
     }, async () => {
       const album = await searchAlbumsAPI(pesquisa);
-      console.log(album);
+      // console.log(album);
       this.setState((prevState) => ({
         pesquisa: '',
         loading: false,

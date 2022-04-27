@@ -28,7 +28,6 @@ class Album extends Component {
       // console.log(musica);
       const musicaFiltrada = musica.filter((el, index) => index !== 0);
       // console.log(musicaFiltrada);
-      // // console.log(musica);
       this.setState({
         artistName: musica[0].artistName,
         collectionName: musica[0].collectionName,
