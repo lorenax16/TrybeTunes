@@ -25,13 +25,13 @@ class MusicCard extends Component {
   }
 
   favoritas = async () => {
-    const { trackId } = this.props;
+    const { musica } = this.props;
     const { checked } = this.state;
     if (checked === false) {
       this.setState({
         loading: true,
       });
-      await addSong(trackId);
+      await addSong(musica);
       this.setState({
         checked: true,
         loading: false,
@@ -79,6 +79,7 @@ MusicCard.propTypes = {
   trackName: propTypes.string.isRequired,
   previewUrl: propTypes.string.isRequired,
   trackId: propTypes.number.isRequired,
+  musica: propTypes.shape.isRequired,
 };
 
 export default MusicCard;

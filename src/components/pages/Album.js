@@ -53,6 +53,7 @@ class Album extends Component {
         </div>
         {filterMusic.map((musica) => (<MusicCard
           key={ musica.trackId }
+          musica={ musica }
           trackId={ musica.trackId }
           trackName={ musica.trackName }
           previewUrl={ musica.previewUrl }
